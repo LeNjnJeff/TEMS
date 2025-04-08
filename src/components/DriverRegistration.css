@@ -1,0 +1,86 @@
+/* Ensure HTML and body take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Base styles for the driver registration container */
+.driver-registration-container {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    max-height: 90vh; /* Limit container height to 90% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+}
+
+/* Heading styles */
+h2 {
+    text-align: center; /* Center align the heading */
+    color: #333; /* Dark text color */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label styles */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold font for labels */
+    color: #555; /* Darker gray color for labels */
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+}
+
+/* Style for textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Button styles */
+.form-actions {
+    text-align: center; /* Center align buttons */
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 15px; /* Padding inside buttons */
+    margin: 5px; /* Space between buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.save-btn {
+    background-color: #28a745; /* Green background for save button */
+}
+
+.cancel-btn {
+    background-color: #dc3545; /* Red background for cancel button */
+}
+
+/* Button hover effects */
+.save-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.cancel-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

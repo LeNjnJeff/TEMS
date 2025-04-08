@@ -1,0 +1,33 @@
+/* src/components/OffenseList.css */
+.offense-list-container {
+    height: 100vh; /* Full height */
+    width: 100%;   /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    background-color: #f8fafc; /* Light background for contrast */
+    padding: 20px; /* Padding around the content */
+  }
+  
+  .offense-table {
+    min-width: 100%; /* Table takes full width */
+    border-collapse: collapse; /* Collapse borders for better styling */
+  }
+  
+  .offense-table th,
+  .offense-table td {
+    padding: 12px 15px; /* Padding for table cells */
+    text-align: center; /* Center text in cells */
+    border: 1px solid #ccc; /* Border for table cells */
+  }
+  
+  .offense-table th {
+    background-color: #4f46e5; /* Dark blue background for the header */
+    color: white; /* White text for the header */
+  }
+  
+  .offense-table tr:hover {
+    background-color: #e5e7eb; /* Light gray on hover */
+  }
+  

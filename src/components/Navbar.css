@@ -1,0 +1,104 @@
+/* Navbar styling */
+.navbar {
+  background-color: #FFD700; /* Bright yellow for road sign vibe */
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  font-weight: bold;
+}
+
+/* Navbar title */
+.navbar-title {
+  font-size: 1.5rem;
+  color: black; /* High contrast for readability */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar button (burger icon) */
+.navbar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-button:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: absolute;
+  top: 64px; /* Align right under the navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 64px); /* Full height */
+  background-color: black; /* High contrast background */
+  border-right: 4px solid #FFD700; /* Yellow border */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Sidebar open state */
+.sidebar.open {
+  transform: translateX(0); /* Slide-in effect */
+}
+
+/* Sidebar links */
+.nav-link {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #FFD700; /* Yellow hover effect */
+  color: black; /* Text turns black */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 64px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  z-index: 1000;
+  width: 180px;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #FFD700; /* Yellow hover effect */
+  color: black;
+}
+
+/* Dynamic transitions for dropdown icons */
+.dropdown-item svg {
+  transition: transform 0.2s;
+}
+
+.dropdown-item:hover svg {
+  transform: rotate(10deg); /* Subtle tilt effect */
+}

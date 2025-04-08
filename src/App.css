@@ -1,0 +1,12 @@
+/* Add this to your App.css */
+.full-height {
+  height: 100vh; /* Full height for main pages */
+}
+
+.offense-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8; /* Light background */
+}

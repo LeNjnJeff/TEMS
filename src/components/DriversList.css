@@ -1,0 +1,41 @@
+/* Ensuring the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Scrollable container */
+.container {
+  padding: 1rem;
+  max-height: 100vh;
+  overflow-y: auto; /* Enable scrolling */
+}
+
+/* Table container with max height */
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  display: block;
+}
+
+/* Basic table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #eaeaea;
+  padding: 0.5rem;
+}
+
+/* Button styling */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
